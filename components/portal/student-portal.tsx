@@ -114,7 +114,6 @@ export function StudentPortal({ programmes }: { programmes: ProgrammeOption[] })
         </Link>
         <div className="header-actions">
           <a className="help-link" href="#student-support"><CircleHelp size={16} /> Help</a>
-          <Link href="/admin/sign-in" className="admin-link"><LockKeyhole size={15} /> Admin access</Link>
         </div>
       </header>
 
