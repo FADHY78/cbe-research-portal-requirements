@@ -44,7 +44,8 @@ export function AdminSignIn() {
         {error && <div className="auth-error" role="alert">{error}</div>}
         <button className="primary-button auth-submit" type="submit" disabled={pending}>{pending ? 'Signing in…' : 'Sign in securely'} <ArrowRight size={16} /></button>
       </form>
-      <div className="auth-security"><ShieldCheck size={16} /><span><strong>Secure access</strong><small>Administrator accounts are provisioned by your system administrator. Public sign-up is disabled.</small></span></div>
+      <div className="auth-security"><ShieldCheck size={16} /><span><strong>Secure access</strong><small>Administrator accounts are provisioned through a protected one-time setup. Public sign-up is disabled.</small></span></div>
+      <Link className="admin-setup-link" href="/admin/setup">First-time administrator setup</Link>
     </section>
     <footer className="auth-footer">© {new Date().getFullYear()} College of Business Education <span>·</span> Student research allocation</footer>
   </main>
